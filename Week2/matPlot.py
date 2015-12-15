@@ -29,7 +29,6 @@ import csv
 #4
 csvDataContainer = []
 osInfoContainer = []
-test123
 # try:
 with open("topOperatingSystems.csv") as csvfile:
     operatingSystemsData = csv.DictReader(csvfile, delimiter=",")
