@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+   <clients>
+      <client>
+         <ipAddress>127.0.10.1</ipAddress>
+         <os>Windows7</os>
+      </client>
+      <client>
+         <ipAddress>127.0.10.2</ipAddress>
+         <os>Windows7</os>
+      </client>
+      <client>
+         <ipAddress>127.0.10.3</ipAddress>
+         <os>Windows7</os>
+      </client>
+      <client>
+         <ipAddress>127.0.10.4</ipAddress>
+         <os>Windows7</os>
+      </client>
+      <client>
+         <ipAddress>127.0.10.5</ipAddress>
+         <os>WindowsXP</os>
+      </client>
+   </clients>
+   <servers>
+      <server>
+         <harddisks>
+            <disk1>
+               <diskLetter>C</diskLetter>
+               <diskLetter>D</diskLetter>
+            </disk1>
+            <disk2>
+               <diskLetter>E</diskLetter>
+            </disk2>
+            <disk3>
+               <diskLetter>F</diskLetter>
+            </disk3>
+         </harddisks>
+         <ipAddress>127.0.0.1</ipAddress>
+         <os>Windows 2012 Standard</os>
+      </server>
+      <server>
+         <harddisks>
+            <disk1>
+               <diskLetter>C</diskLetter>
+               <diskLetter>B</diskLetter>
+            </disk1>
+            <disk2>
+               <diskLetter>D</diskLetter>
+               <diskLetter>F</diskLetter>
+            </disk2>
+            <disk3>
+               <diskLetter>G</diskLetter>
+            </disk3>
+         </harddisks>
+         <ipAddress>127.0.0.2</ipAddress>
+         <os>Windows 2012 Standard</os>
+      </server>
+   </servers>
+</network>

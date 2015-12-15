@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <configVersion>0.1</configVersion>
+   <ipAddress>127.0.0.1</ipAddress>
+   <logDir>/var/log/ftplog.txt</logDir>
+   <serverName>AmazingFTPServer</serverName>
+   <shares>
+      <share>
+         <groups>
+            <element>
+               <name>users</name>
+               <permissions>RO</permissions>
+            </element>
+            <element>
+               <name>admins</name>
+               <permissions>RW</permissions>
+            </element>
+         </groups>
+         <owner>marco</owner>
+         <path>/var/www/ftp</path>
+      </share>
+      <share>
+         <groups>
+            <element>
+               <name>users</name>
+               <permissions>RO</permissions>
+            </element>
+            <element>
+               <name>admins</name>
+               <permissions>RW</permissions>
+            </element>
+         </groups>
+         <owner>admin</owner>
+         <path>/var/www/admin</path>
+      </share>
+   </shares>
+</root>

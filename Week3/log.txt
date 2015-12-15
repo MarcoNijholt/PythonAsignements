@@ -1,0 +1,2 @@
+INFO:root:[2015-12-09 14:52:38.176987] Started script
+INFO:root:[2015-12-09 14:52:38.196005] Script ended
