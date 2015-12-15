@@ -22,7 +22,6 @@ import csv
 # grafiek.annotate('Wat gebeurt hier?!', xy=(17, max(belastingWaarden)), xytext=(13, max(belastingWaarden)+3), arrowprops=dict(facecolor="black", shrink=0.05),)
 # grafiek.title("Gemiddelde CPU belasting per uur")
 # legend = grafiek.legend(loc='upper center', shadow=True, fontsize='x-large')
-#
 # grafiek.show()
 #
 
@@ -53,6 +52,21 @@ with open("topOperatingSystems.csv") as csvfile:
                 #print(key, value)
                 osInfoContainer[counter]["values"].append(value)
                 counter += 1
+
+jaren = [2011, 2012, 2013, 2014]
+
+for os in osInfoContainer:
+    grafiek.plot(jaren, os['values'], label=os['osName'])
+
+grafiek.ylabel('Marketshare')
+grafiek.xlabel('Jaar')
+grafiek.axis([2011,2014,0,100])
+grafiek.grid(True)
+grafiek.title("Marketshare van bestuuringsystemen per jaar")
+legend = grafiek.legend(loc='upper left', shadow=True, fontsize='small')
+
+grafiek.show()
+
 
 print(osInfoContainer)
 
